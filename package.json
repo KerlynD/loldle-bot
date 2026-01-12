@@ -1,0 +1,16 @@
+{
+    "name": "loldle-link-bot",
+    "version": "1.0.0",
+    "description": "Discord bot that posts a LoLdle link via /loldle",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node src/index.js",
+      "deploy:commands": "node src/deploy-commands.js"
+    },
+    "dependencies": {
+      "discord.js": "^14.18.0",
+      "dotenv": "^16.4.5"
+    }
+  }
+  

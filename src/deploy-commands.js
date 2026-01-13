@@ -14,6 +14,35 @@ const commands = [
   new SlashCommandBuilder()
     .setName("loldle")
     .setDescription("Open today's LoLdle")
+    .toJSON(),
+  new SlashCommandBuilder()
+    .setName("lookup")
+    .setDescription("Look up a League of Legends player's stats and performance")
+    .addStringOption(option =>
+      option
+        .setName("riotid")
+        .setDescription("Riot ID (e.g., PlayerName#NA1)")
+        .setRequired(true)
+    )
+    .addStringOption(option =>
+      option
+        .setName("region")
+        .setDescription("Server region (default: NA)")
+        .setRequired(false)
+        .addChoices(
+          { name: "NA", value: "na1" },
+          { name: "EUW", value: "euw1" },
+          { name: "EUNE", value: "eun1" },
+          { name: "KR", value: "kr" },
+          { name: "BR", value: "br1" },
+          { name: "LAN", value: "la1" },
+          { name: "LAS", value: "la2" },
+          { name: "OCE", value: "oc1" },
+          { name: "TR", value: "tr1" },
+          { name: "RU", value: "ru" },
+          { name: "JP", value: "jp1" }
+        )
+    )
     .toJSON()
 ];
 

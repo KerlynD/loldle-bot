@@ -8,8 +8,18 @@ primary_region = 'ewr'
 
 [build]
 
+[env]
+  NODE_ENV = "production"
+
+# Keep bot running 24/7
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = false
+  min_machines_running = 1
+
 [[vm]]
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024

@@ -1,16 +1,17 @@
 {
-    "name": "loldle-link-bot",
-    "version": "1.0.0",
-    "description": "Discord bot that posts a LoLdle link via /loldle",
-    "main": "src/index.js",
-    "type": "module",
-    "scripts": {
-      "start": "node src/index.js",
-      "deploy:commands": "node src/deploy-commands.js"
-    },
-    "dependencies": {
-      "discord.js": "^14.18.0",
-      "dotenv": "^16.4.5"
-    }
+  "name": "loldle-link-bot",
+  "version": "2.0.0",
+  "description": "Discord bot for LoLdle puzzles and League of Legends player stats with GPI analysis",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy:commands": "node src/deploy-commands.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.5"
   }
+}
   
